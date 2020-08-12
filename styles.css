@@ -1,0 +1,25 @@
+*{
+    line-height: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    margin: auto;
+    max-width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.info {
+    background: #eed2d2;
+    color: #078079;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+.links {
+    color: orange;
+    padding: 20px;
+}
