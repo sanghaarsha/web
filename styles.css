@@ -1,25 +1,12 @@
-* {
-    line-height: 1.7em;
-    margin: 0;
-    padding: 0;
+.card-body {
+    max-width: 1100px;
+    margin: 20px auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
-#container {
-    margin: auto;
-    max-width: 600px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.info {
-    background: #eed2d2;
-    color: #078079;
-    padding: 30px;
-    margin-bottom: 20px;
-}
-
-#container a {
-    text-decoration: none;
-}
-
-.links {
-    color: orange;
-    padding: 20px;
+.btn {
+    max-width: 200px;
+    padding: 15px;
+    margin: 10px auto;
 }
