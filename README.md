@@ -8,3 +8,10 @@ _HTML_,
 _CSS_,
 _JavaScript_,
 _Bootstrap 4_
+
+# Author :
+
+- @Sanghaarsha
+
+_[Twitter](http://www.twitter.com/sanghaarsha)_
+_[Github](http://www.github.com/sanghaarsha)_
