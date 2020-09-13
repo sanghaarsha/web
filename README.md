@@ -4,7 +4,7 @@ This repo has some of the sites I designed while learning Web-Development. All t
 
 # Tech Stack
 
-_HTML_
-_CSS_
-_JavaScript_
+_HTML_,
+_CSS_,
+_JavaScript_,
 _Bootstrap 4_
