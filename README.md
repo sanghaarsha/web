@@ -13,5 +13,5 @@ _Bootstrap 4_
 
 - @Sanghaarsha
 
-_[Twitter](http://www.twitter.com/sanghaarsha)_
-_[Github](http://www.github.com/sanghaarsha)_
+- _[Twitter](http://www.twitter.com/sanghaarsha)_
+- _[Github](http://www.github.com/sanghaarsha)_
