@@ -5,6 +5,13 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+.main,
+.main h3{
+    color: #343a40;
+    font-family: 'Ubuntu', Courier, monospace;
+}
+
 .btn-projects {
     display: inline-block;
     padding: 15px;
