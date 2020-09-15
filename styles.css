@@ -7,9 +7,9 @@
 }
 
 .main,
-.main h3{
+.main h3 {
     color: #343a40;
-    font-family: 'Ubuntu', Courier, monospace;
+    font-family: "Ubuntu", Courier, monospace;
 }
 
 .btn-projects {
