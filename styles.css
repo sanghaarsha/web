@@ -5,8 +5,26 @@
     font-size: 18px;
     font-weight: bold;
 }
-.btn {
-    max-width: 200px;
+.btn-projects {
+    display: inline-block;
     padding: 15px;
     margin: 10px auto;
+}
+
+.links-container {
+    margin: 20px auto;
+}
+
+.links-container a {
+    margin-right: 15px;
+}
+
+.links-container .btn-info:hover {
+    background: #343a40;
+    border: 3px solid #31a2b8;
+}
+
+.links-container .btn-dark:hover {
+    background: #31a2b8;
+    border: 3px solid #343a40;
 }
