@@ -6,8 +6,7 @@
     font-weight: bold;
 }
 
-.main,
-.main h3 {
+.main {
     color: #343a40;
     font-family: "Ubuntu", Courier, monospace;
 }
@@ -34,4 +33,9 @@
 .links-container .btn-dark:hover {
     background: #31a2b8;
     border: 3px solid #343a40;
+}
+
+.card-header:first-child {
+    background: #444;
+    color: #fff;
 }
