@@ -1,0 +1,25 @@
+/* Smartphones */
+/* Styling for 500px or less */
+@media (max-width: 500px) {
+    body {
+        background: red;
+    }
+
+    #smartphone h1 {
+        display: block;
+    }
+}
+
+/* Tablets */
+/* Between 501-768px */
+@media (min-width: 501px) and (max-width: 768px) {
+    body {
+        background: blue;
+    }
+
+    #tablet h1 {
+        display: block;
+    }
+}
+
+/* Other styling for screen above 768px are in style tags inside Head section of index.html file*/
