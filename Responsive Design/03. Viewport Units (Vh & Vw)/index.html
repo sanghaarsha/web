@@ -1,0 +1,80 @@
+<!-- Viewport : whole area available for browser -->
+<!-- Viewport Height & Weight: Always 100 Slices available -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vh & Vw</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            header {
+                background: #333 url("https://source.unsplash.com/daily")
+                    no-repeat center center/cover;
+                color: #fff;
+                height: 100vh;
+                text-align: center;
+                /* width: 50vw; */
+                padding: 2rem;
+                padding-top: 15rem;
+            }
+
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                margin: 1rem 0;
+            }
+
+            .btn {
+                display: inline-block;
+                text-decoration: none;
+                background: #f4f4f4;
+                color: #333;
+                padding: 0.75rem 2rem;
+            }
+
+            @media (max-height: 450px) {
+                header {
+                    padding-top: 5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Hello</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                asperiores labore impedit at porro optio modi dolor quis atque
+                eaque!
+            </p>
+            <a href="#" class="btn">Click For More!</a>
+        </header>
+
+        <!-- This will show below 100vh after just scrolling -->
+        <section>
+            <h3>About Us</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                officia commodi saepe ex error deleniti. Tenetur nam nihil
+                optio. Ipsam, atque eaque officia cupiditate corporis hic quas
+                veritatis error nesciunt facere soluta. Ipsa ad quas aliquid
+                tenetur doloribus incidunt quaerat. Eos delectus quos officia
+                tempore doloribus illum facere nesciunt repellendus?
+            </p>
+        </section>
+    </body>
+</html>
