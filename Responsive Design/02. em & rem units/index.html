@@ -1,0 +1,75 @@
+<!-- default font size for "html" or root element : 16px -->
+<!-- em :  gets font size from the parent element -->
+<!-- rem : based on root element -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About em & rem</title>
+
+        <!-- em styling -->
+        <!-- <style>
+            /*  Now changing the font size for box-1, which is parent of 
+                p, p has default font size 1 em, as em units inherit from
+                parent elements now p has font = 20px.
+            */
+            #box-1 {
+                font-size: 20px;
+            }
+
+            #box-1 p {
+                font-size: 1.5em;
+                /* Lets calculate it's font size:
+                    font-size of parent element (box-1) = 20px = 1em
+                    0.5 em = 10px
+                    1.5 em = 20+10 px = 30px
+                */
+                /* Along with font size default margin and padding are also added */
+
+                padding: 1em;
+                /* Now this padding inherits the latest value of parent element */
+                /* Here latest value = 1.5em = 30px */
+            }
+        </style> -->
+
+        <!-- rem styling -->
+        <style>
+            /*  Root element font size can also be changed  */
+            html {
+                /* 62.5% of 16px  = 10px */
+                font-size: 62.5%;
+            }
+
+            #box-2 h3 {
+                font-size: 2rem; /* 2 * 10px */
+            }
+            #box-2 p {
+                font-size: 1.6rem; /* 1.6 * 10px */
+                line-height: 1.7rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- box-1 for em styling -->
+        <!-- <div id="box-1">
+            <h3>Box One</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                consequatur magni assumenda saepe modi id sequi maxime fugiat a
+                reprehenderit.
+            </p>
+        </div> -->
+
+        <div id="box-2">
+            <h3>Box Two</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                consequatur magni assumenda saepe modi id sequi maxime fugiat a
+                reprehenderit.
+            </p>
+        </div>
+    </body>
+</html>
