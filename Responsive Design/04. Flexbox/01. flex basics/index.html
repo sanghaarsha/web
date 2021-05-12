@@ -1,0 +1,49 @@
+<!-- "flex" is a display property just-like, block, inline, inline-block and none -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex Basics</title>
+
+        <style>
+            #container {
+                display: flex;
+                /* flex direction is row by default */
+                /* flex-direction: column; */
+            }
+
+            .item {
+                background: #f4f4f4;
+                border: #ccc solid 1px;
+                text-align: center;
+                margin: 0.7rem;
+                flex: 1;
+            }
+
+            /* pseudo selector */
+            .item:first-child {
+                flex: 2;
+                /* i.e. Item 1 will get half of screen */
+
+                /* flex-wrap: wrap; */
+                /* If Items will be more than it fits on screen they are moved to next line */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="item">
+                <h3>Item1</h3>
+            </div>
+            <div class="item">
+                <h3>Item2</h3>
+            </div>
+            <div class="item">
+                <h3>Item3</h3>
+            </div>
+        </div>
+    </body>
+</html>
