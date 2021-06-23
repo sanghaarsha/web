@@ -31,6 +31,7 @@ async function getQuote() {
         quoteText.innerText = data.quoteText;
     } catch (error) {
         getQuote();
+        console.error("Error while fetching quote. Retrying!!");
     }
 }
 // Tweet Quote
