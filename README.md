@@ -16,4 +16,3 @@ _Bootstrap 4_
 - @Sanghaarsha
 
 - _[Github](http://www.github.com/sanghaarsha)_
-- 
