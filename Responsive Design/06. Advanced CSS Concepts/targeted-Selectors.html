@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Targeted Selectors</title>
+
+        <style>
+            /* direct child */
+            div > p {
+                background: grey;
+            }
+            /* directly after */
+            div + p {
+                background: #333;
+                color: #fff;
+            }
+            /* by attribute */
+            a[target="_self"] {
+                background: pink;
+                color: #444;
+                text-decoration: none;
+                display: block;
+                width: 50px;
+                margin-top: 5px;
+            }
+            /* specific attribute values */
+            a[target="_blank"] {
+                background: red;
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                width: 50px;
+                margin-top: 5px;
+            }
+            input[type="text"],
+            input[type="email"]{
+                width: 80%;
+                display: block;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <ul>
+                <li>Item : 1</li>
+                <li><p>Item : 2</p></li>
+                <li>Item : 3</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <a href="#">Page 1</a>
+        <a href="#" target="_self">Page 2</a>
+        <a href="https://www.Google.com" target="_blank">Google</a>
+
+        <br />
+        <br />
+        <form>
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+            <input type="submit" placeholder="submit" />
+        </form>
+    </body>
+</html>
