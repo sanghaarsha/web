@@ -7,12 +7,14 @@ const loader = document.getElementById("loader");
 
 //Get Quote From API
 async function getQuote() {
-    const proxyUrl = "https://ancient-hamlet-75603.herokuapp.com/";
+    // this proxy server was taken down by heroku
+    // const proxyUrl = "https://ancient-hamlet-75603.herokuapp.com/";
     const apiUrl =
         "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
 
     try {
-        const response = await fetch(proxyUrl + apiUrl);
+        // const response = await fetch(proxyUrl + apiUrl);
+        const response = await fetch(apiUrl);
         const data = await response.json();
 
         // If author is blank add 'Unknown'
