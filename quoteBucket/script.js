@@ -9,31 +9,28 @@ const loader = document.getElementById("loader");
 async function getQuote() {
     // this proxy server was taken down by heroku
     // const proxyUrl = "https://ancient-hamlet-75603.herokuapp.com/";
-    // const apiUrl =
-    //     "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
-
-    const apiUrl = "https://goquotes-api.herokuapp.com/api/v1/random?count=1";
+    const apiUrl =
+        "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
 
     try {
         // const response = await fetch(proxyUrl + apiUrl);
         const response = await fetch(apiUrl);
-        const result = await response.json();
-        const data = result.quotes[0];
+        const data = await response.json();
 
         // If author is blank add 'Unknown'
-        if (data.author === "") {
+        if (data.quoteAuthor === "") {
             authorText.innerText = "Unknown";
         } else {
-            authorText.innerText = data.author;
+            authorText.innerText = data.quoteAuthor;
         }
         // Reducing font size for very long quotes
-        if (data.text.length > 110) {
+        if (data.quoteText.length > 110) {
             quoteText.classList.add("long-quote");
         } else {
             quoteText.classList.remove("long-quote");
         }
         // Adding quote text to html element
-        quoteText.innerText = data.text;
+        quoteText.innerText = data.quoteText;
     } catch (error) {
         getQuote();
         console.error("Error while fetching quote. Retrying!!");
